@@ -55,7 +55,7 @@ def extra_info(infile, outfile):
 		magma.eval("an := AnalyticRank(E);")
 		an = int(round(float(magma.eval("an;"))))
 		
-		isog_class = "%s-%s%s" % (label, isog_letter, isog_number)
+		isog_class = "%s-%s" % (label, isog_letter)
 		try:
 			isog_rank = ranks[field][isog_class]
 		except KeyError:
